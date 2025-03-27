@@ -1,0 +1,124 @@
+/* CheckoutPage.css */
+/* Styling for the checkout page */
+
+
+.checkout-header {
+  background-color: #007bff; /* Blue header */
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout-header .logo {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: white; /* White text */
+}
+
+.checkout-header .go-home-button {
+  background-color: #007bff; /* Same blue as header */
+  color: white; /* White text */
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.checkout-header .go-home-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Cart item list and style */
+.cart-item-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cart-item-card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 300px;
+}
+
+.cart-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.cart-item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-item-info button {
+  margin-top: 10px;
+}
+
+.cart-item-info p {
+  margin: 5px 0;
+}
+
+/* Checkout form styles */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.checkout-form h3 {
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.submit-button {
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
