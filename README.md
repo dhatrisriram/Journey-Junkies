@@ -15,7 +15,7 @@ Journey Junkies is an interactive travel platform designed to connect travelers 
 - **Frontend**: React, CSS, HTML
 - **Backend**: Node.js, Express
 - **Database**: MongoDB
-- **APIs**: External travel and booking APIs to enhance booking and travel experiences.
+- **APIs**: External travel and payment APIs. 
 
 ## About
 
