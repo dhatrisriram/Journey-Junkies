@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .image-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .images-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 200px); /* Modify rows for consistent height */
+    gap: 0px; /* No gaps between images */
+    width: 100%;
+    opacity: 0.60;
+  }
+
+  .images-grid img {
+    width: 100%;
+    height: 100%;
+    border: none; /* No borders for seamless blending */
+  }
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+    color:whitesmoke;
+    font-family: 'Alegreya';
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    line-height: 1.2;
+  }
+
+  .form-section {
+    flex: 1;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 30px; /* Increased padding for better form layout */
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    font-size: 38px; /* Increase text size */
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+    font-family:' Alegreya';
+    font-weight: 600;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  button {
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #218838;
+  }
+
+  .signup-text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .signup-text a {
+    color: #28a745;
+    text-decoration: none;
+  }
+
+  .signup-text a:hover {
+    text-decoration: underline;
+  }

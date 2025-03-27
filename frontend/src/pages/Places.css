@@ -1,0 +1,170 @@
+/* Reset everything first */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles */
+html {
+  font-size: 100%; /* Ensures base font size is 100% of default */
+}
+
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em; /* Base font size */
+}
+
+/* Main container */
+.places-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 0;
+}
+
+/* Header Section */
+.header {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  overflow: hidden; /* Prevent content from spilling out */
+}
+
+.header h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 6vw; /* Use viewport width (vw) for responsiveness */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.header p {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 80%;
+  font-size: 0.98rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Places to Visit Section */
+.things-to-do {
+  margin-top: 2rem;
+  padding: 4vw;
+}
+
+.things-to-do h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.places {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 3vw;
+}
+
+.place-card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.place-card:hover {
+  transform: scale(1.05);
+}
+
+.place-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.place-card-info {
+  padding: 2vw;
+}
+
+.place-card-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.place-card-info p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+/* Best Time to Visit Section */
+.best-time-to-visit {
+  margin-top: 2rem;
+  padding: 4vw;
+}
+
+.best-time-to-visit h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.seasons {
+  display: flex; /* Makes the items inside .seasons appear side by side */
+  gap: 2rem; /* Adds space between the seasons */
+}
+
+.season {
+  flex: 1; /* Ensures each season takes up equal space */
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.season h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.season p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.season ul {
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.festivals {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.festivals h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.festivals p{
+  font-size: 1.2rem;
+}

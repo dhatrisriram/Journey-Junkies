@@ -1,0 +1,177 @@
+/* Reset everything first */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* Base styles */
+html {
+  font-size: 100%; /* Ensures base font size is 100% of default */
+  
+}
+
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  font-size: 1.2em; /* Base font size */
+  background-color: white;
+}
+
+/* Main container */
+.App {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: lightcyan;
+  padding-top: 60px; /* Add padding to ensure content is not hidden by the navbar */
+}
+
+/* Header Section */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  position: fixed; /* Make navbar fixed to the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 2rem; /* Adjust the font size */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1rem; /* Adjust the font size */
+}
+
+/* Content Layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px; 
+  background-color: white;/* Ensure the content isn't hidden by the navbar */
+}
+
+.sidebar {
+  width: 250px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  margin-left: 0;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  min-width: 300px; /* Allow main section to shrink to fit smaller screens */
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group h4 {
+  margin: 0 0 10px;
+}
+
+.guide-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.guide-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: white;
+}
+
+.guide-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Star Rating */
+.star-rating {
+  color: gold;
+  font-size: 20px;
+}
+
+.star-rating span {
+  margin-right: 2px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .guide-list {
+    grid-template-columns: 1fr; /* Show guides in a single column on smaller screens */
+  }
+
+  .navbar h1 {
+    font-size: 1.5rem; /* Adjust navbar title size for small screens */
+  }
+
+  .nav-links a {
+    font-size: 0.9rem; /* Adjust link size for small screens */
+  }
+}
+
+/* Ensures that the guide cards are responsive */
+.guide-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.guide-card:hover {
+  transform: scale(1.05);
+}
+
+option,select{
+  font-size: 20px;
+}

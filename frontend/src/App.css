@@ -1,0 +1,117 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightcyan;
+}
+
+.header {
+  color: black;
+  text-align: center;
+  padding: 2rem;
+  max-width: 100%; /* Ensure it stretches fully within the viewport */
+}
+
+.header h1 {
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header p {
+  font-size: 2.5rem;
+}
+
+/* Styling for the image slider */
+.image-slider img {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  max-width: 1200px;  /* Limit the image size */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navigation tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tabs button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* Places to visit and Best Time to Visit sections */
+.things-to-do, .best-time-to-visit {
+  padding: 2rem;
+}
+
+.things-to-do h2, .best-time-to-visit h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Styling for the place cards */
+.places {
+  display: flex;
+  gap: 1rem;
+}
+li,p{
+  font-size: 1.5rem;
+}
+
+.place-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  
+}
+
+.place-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.place-card h3 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.place-card p {
+  margin: 0.5rem 0;
+}
+
+.place-card a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+/* Best time to visit season sections */
+.best-time-to-visit .seasons {
+  display: flex;
+  gap: 1rem;
+}
+
+.season {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 30%;
+}
+
+/* Festivals and events section */
+.festivals {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f8f8f8;
+  border-radius: 8px;
+ 
+}
